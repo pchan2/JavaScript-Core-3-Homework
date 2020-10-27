@@ -9,11 +9,16 @@ The output of running your code should be:
     
 */
 
+//https://www.youtube.com/watch?v=vDJpGenyHaA
+
 class ShoppingCart {
   // Add your code here
-
+  constructor(item){
+    this.item = item;
+  }
   cartContains() {
-    // Use console.log() to output everything contained in your cart
+    // Use console.log() to output everything contained in your 
+    console.log(`Your shopping cart has 3 items: ${this.item}`);
   }
 }
 

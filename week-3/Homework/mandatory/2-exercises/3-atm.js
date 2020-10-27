@@ -13,7 +13,18 @@
 
 class ATM {
     // Add your code here
-
+    constructor(balance) {
+        this.deposit = deposit;
+        this.balance = balance + this.deposit;
+        this.withdrawal = withdrawal;
+        if(this.withdrawal > this.balance) {
+            alert('Insufficient Funds');
+            return false;
+        } else if(this.withdrawal <= this.balance) {
+            this.balance = balance - withdrawal;
+            return this.balance;
+        }
+    }
 }
 
 let atm = new ATM(); // Create the ATM

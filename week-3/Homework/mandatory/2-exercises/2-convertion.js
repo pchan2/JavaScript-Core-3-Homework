@@ -23,6 +23,16 @@
 
 // Write your code here
 
+class Person {
+    constructor (name) {
+        this.name = name;
+        this.greeting = () => {
+            alert('Hi! I\'m ' + this.name + '.');
+        };
+        return this;
+    }
+}
+
 // Do not edit this section
 const simon = new Person("simon");
 console.log(simon.name);
